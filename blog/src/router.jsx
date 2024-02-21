@@ -5,7 +5,7 @@ import GuestLayout from "./components/GuestLayout";
 import DefaultLayout from "./components/DefaultLayout";
 import Login from "./views/Login";
 import Signup from "./views/Signup";
-import NotFound from "./views/NotFound";
+import NotFound from "./views/Notfound";
 const router= createBrowserRouter([
     {
         path: "/",

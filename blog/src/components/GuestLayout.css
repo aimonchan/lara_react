@@ -1,0 +1,37 @@
+ 
+  .form-outline {
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all .2s linear;
+  }
+  
+  .form-control:active~.form-label {
+    transform: translateY(-1.5rem) translateY(.1rem) scale(.8);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .form-control:focus~.form-label {
+    transform: translateY(-1.5rem) translateY(.1rem) scale(.8);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .form-control~.form-label {
+    position: absolute;
+    top: 0;
+    left: .75rem;
+    padding-top: .5rem;
+    pointer-events: none;
+    transition: all .2s ease-out;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: auto;
+  }
+
+  .width-50{
+    width: 300px;
+  }
+
+  .center{
+    margin:auto;
+  }

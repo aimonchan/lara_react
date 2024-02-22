@@ -6,6 +6,10 @@ function DefaultLayout(){
     if(!token){
         return <Navigate to="/login" />
     }
+
+    const onLogout=(ev)=>{
+        ev.preventDefault()
+    }
   
     return(
         <div class="container-fluid">
@@ -45,7 +49,10 @@ function DefaultLayout(){
             <main>
             <nav class="navbar navbar-light bg-light">
                 <a class="navbar-brand" href="#">Navbar</a>
-                <a class="navbar-brand" href="#">User Info</a>
+                <a class="navbar-brand" href="#">
+                    {user.name}
+                    <a href="#" onClick={onLogout} className="btn">Logout</a>
+                </a>
             </nav>
                 <Outlet/>
             </main>

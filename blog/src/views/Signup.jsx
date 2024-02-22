@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 export default function Signup(){
+    const onSubmit=(ev)=>{
+        ev.preventDefault();
+    }
     return(
     
         <form class="form-inline">
-            <h1 className="text-center">Sign Up</h1>
+            <h4 className="text-center">Sign Up</h4>
             <div class="form-group">
             <label for="email">Email address:</label>
             <input type="email" class="form-control" id="email"></input>
@@ -20,7 +23,7 @@ export default function Signup(){
         <div className="text-center nav-link">
             <Link to="/login">Already have an account!</Link>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button onSubmit={onSubmit} type="submit" class="btn btn-primary">Submit</button>
         </form>
     )
 }
